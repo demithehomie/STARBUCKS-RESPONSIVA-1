@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Responsiva</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="assets_logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's Next</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="main">
+            <div class="textBox">
+                <h2>It's not just coffee<br>It's <span>Starbucks</span></h2>
+                <p>The best coffee brand in the world.</p>
+                    <p> Now avaliable at the Regiao dos Lagos, at Rio de Janeiro.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="drink.png" class="starbucks">
+            </div>
+        </div>
+
+        <ul class="drinks">
+            <li><img src="drinkwhite.png" onclick="slider('assets/img1.png');changeColor('#017143') "  ></li>
+            <li><img src="drinkwhite2.png" onclick="slider('assets/img2.png');changeColor('#C50B97')"  ></li>
+            <li><img src="drinkwhite3.png" onclick="slider('assets/img3.png');changeColor('#dd0a14f8')"  ></li>
+        </ul>
+
+        <ul class="socials">
+            <li><a href="#"><img src="facebook.jpg"></a></li>
+            <li><a href="#"><img src="twitter.jpg"></a></li>
+            <li><a href="#"><img src="instagram.jpg"></a></li>
+        </ul>
+
+    </section>
+
+        
+
+
+    <script>
+        function slider(anything){
+            document.querySelector('starbucks').src = anything
+        }
+
+
+        function changeColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+
+
+</body>
+</html>
